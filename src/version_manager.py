@@ -34,7 +34,7 @@ class versionManager:
     #   GUARDAR VERSÃO
     # ---------------------------------------------------------
     def _save_version(self, path):
-        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        timestamp = datetime.now().strftime("%Y-%m-%d")
         pdf_name = f"{path.stem}_{timestamp}.pdf"
         dest = self.backup_folder / pdf_name
         stem = path.stem.lower()
