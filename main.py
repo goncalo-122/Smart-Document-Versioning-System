@@ -3,9 +3,10 @@ from src.file_monitor import FileMonitor
 from src.version_manager import versionManager   
 from queue import Empty
 def main():
-    folder_to_watch = r"C:\Users\gonca\Documents\Segue"
-    backup_folder = r"C:\Users\gonca\Desktop\Backup\backups\versions"
-    deleted_folder = r"C:\Users\gonca\Desktop\Backup\backups\deleted"
+    folder_to_watch = "watch"
+    backup_folder = "backups/versions"
+    deleted_folder = "backups/deleted"
+
 
     queue = Queue()
     version_manager = versionManager(backup_folder, deleted_folder)
